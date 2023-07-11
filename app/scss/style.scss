@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  /* font-family: 'Yeseva One', cursive; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-color: #fff8f3;
+
+  &__inner {
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__list-link {
+    text-transform: uppercase;
+  }
+}
+
+.phone {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/phone.svg);
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: -23px;
+  }
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 35px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__social {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.email {
+  margin: 17px 0;
+}
