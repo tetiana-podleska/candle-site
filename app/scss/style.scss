@@ -165,7 +165,20 @@ ul {
       order: 1;
     }
     &__menu-list {
-      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 153px;
+      padding: 25px 35px 25px 45px;
+      flex-direction: column;
+      transform: translateY(-110%);
+      transition: transform 0.5s ease;
+      color: #fff8f3;
+      background-color: #7b6152;
+      z-index: 5;
+    }
+    &__menu-list.menu--open {
+      transform: translateY(0%);
     }
   }
 
