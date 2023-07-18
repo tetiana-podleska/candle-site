@@ -10,7 +10,6 @@ html {
 
 body {
   font-family: "Comfortaa", cursive;
-  /* font-family: 'Yeseva One', cursive; */
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
@@ -24,6 +23,13 @@ a {
 
 ul {
   list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
 }
 
 .container {
@@ -57,14 +63,11 @@ ul {
 
   &__btn {
     display: none;
-    padding: 0;
+
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 25px;
-    border: none;
-    border-radius: 0;
-    background-color: transparent;
   }
   &__btn span {
     width: 100%;
@@ -84,6 +87,42 @@ ul {
     height: 20px;
     top: -3px;
     left: -23px;
+  }
+}
+
+.main {
+  background-color: #fff8f3;
+}
+
+.top {
+  padding: 40px 0 150px;
+  &__inner {
+    position: relative;
+  }
+  &__content {
+    padding: 150px 0 250px;
+    width: 370px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-family: "Yeseva One", cursive;
+    font-size: 30px;
+  }
+  &__text {
+    margin-bottom: 48px;
+  }
+  &__buy {
+    padding: 18px 54px;
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffbd59;
+    cursor: pointer;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 240px;
   }
 }
 
