@@ -92,6 +92,7 @@ button {
 
 .main {
   background-color: #fff8f3;
+  overflow-x: clip;
 }
 
 .top {
@@ -126,6 +127,59 @@ button {
   }
 }
 
+.about {
+  padding: 50px 0;
+  color: #fafafa;
+  background-color: #a5978e;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    width: 370px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+  &__text {
+    margin-bottom: 15px;
+  }
+  &__list {
+    position: relative;
+    padding-left: 110px;
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+  }
+  &__list::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/decor.png);
+    width: 22px;
+    height: 30px;
+  }
+  &__list::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    bottom: 13px;
+    width: 1000%;
+    height: 1px;
+    background-color: #7b6152;
+  }
+  &__item-img {
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    font-size: 11px;
+  }
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -156,6 +210,21 @@ button {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .top {
+    &__content {
+      padding: 95px 0 70px;
+      width: 333px;
+    }
+    &__img {
+      left: 300px;
+    }
+    &__img-l {
+      width: 655px;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -189,6 +258,22 @@ button {
       top: -2px;
       left: -16px;
       background-size: cover;
+    }
+  }
+  .top {
+    &__content {
+      width: 230px;
+    }
+    &__title {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    &__text {
+      margin-bottom: 20px;
+      font-size: 10px;
+    }
+    &__img {
+      left: 180px;
     }
   }
 }
@@ -228,7 +313,31 @@ button {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+  .top {
+    padding: 30px 0 50px;
+    &__content {
+      width: 180px;
+    }
+    &__title {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+    &__text {
+      margin-bottom: 15px;
+      font-size: 8px;
+    }
+    &__img {
+      left: 167px;
+    }
+    &__img-l {
+      width: 309px;
+    }
+    &__buy {
+      padding: 14px 41px;
+      font-size: 10px;
+    }
+  }
   .footer {
     padding: 50px 0;
     font-size: 14px;
@@ -245,10 +354,26 @@ button {
   }
 }
 
-@media (max-width: 480px) {
-}
-
 @media (max-width: 360px) {
+  .top {
+    &__content {
+      padding: 20px 0 0;
+      width: 200px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+    &__img {
+      left: auto;
+      right: 0;
+    }
+    &__img-l {
+      width: 180px;
+    }
+  }
 }
 
 /** HEADER MEDIA ENDS **/
