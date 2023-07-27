@@ -69,6 +69,7 @@ button {
 
 .title {
   margin-bottom: 15px;
+  font-family: "Yeseva One", cursive;
   font-size: 40px;
   font-weight: 400;
 }
@@ -296,9 +297,33 @@ button {
       padding-left: 20px;
     }
   }
+  .section {
+    &__inner {
+      grid-template-columns: 290px auto;
+      gap: 0 10px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+  }
+  .products {
+    &__content {
+      gap: 67px;
+    }
+  }
 }
 
 @media (max-width: 900px) {
+  .section {
+    &__inner {
+      grid-template-columns: 200px auto;
+    }
+  }
+  .products {
+    &__content {
+      gap: 30px 16px;
+    }
+  }
   .footer {
     &__inner {
       flex-wrap: wrap;
@@ -373,6 +398,31 @@ button {
   .title {
     font-size: 15px;
   }
+  .products {
+    &__item {
+      width: 200px;
+    }
+    &__item-img {
+      margin-bottom: 6px;
+      width: 200px;
+    }
+    &__item-price {
+      margin-bottom: 7px;
+      font-size: 12px;
+    }
+    &__item-title {
+      margin-bottom: 9px;
+      font-size: 12px;
+    }
+    &__item-text {
+      margin-bottom: 18px;
+      font-size: 8px;
+    }
+  }
+  .button {
+    padding: 10px 26px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -408,6 +458,13 @@ button {
       display: flex;
     }
   }
+  .section__inner {
+    display: block;
+  }
+  .section__descr {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -436,6 +493,7 @@ button {
     }
   }
   .about {
+    margin-bottom: 50px;
     &__inner {
       align-items: flex-end;
     }
@@ -458,6 +516,16 @@ button {
     &__item-text {
       display: none;
     }
+  }
+  .section {
+    padding-bottom: 50px;
+  }
+  .section__content-descr {
+    padding-bottom: 62px;
+  }
+  .section__descr {
+    margin: 0 auto 30px;
+    width: 300px;
   }
   .footer {
     padding: 50px 0;
@@ -516,6 +584,35 @@ button {
   }
   .title {
     margin-bottom: 10px;
+  }
+  .section__descr {
+    margin: 0 auto 25px;
+    width: 235px;
+  }
+  .products {
+    &__item {
+      width: 150px;
+    }
+    &__content {
+      gap: 40px 7px;
+    }
+    &__item-img {
+      width: 150px;
+    }
+    &__item-price {
+      margin-bottom: 5px;
+      font-size: 10px;
+    }
+    &__item-title {
+      font-size: 10px;
+    }
+    &__item-text {
+      margin-bottom: 16px;
+    }
+  }
+  .button {
+    padding: 8px 20px;
+    font-size: 8px;
   }
 }
 
