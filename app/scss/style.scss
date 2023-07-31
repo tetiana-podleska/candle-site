@@ -243,6 +243,61 @@ button {
   grid-template-columns: auto auto;
 }
 
+.steps {
+  &__list {
+    gap: 70px 25px;
+    counter-reset: number;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  &__item::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    counter-increment: number;
+    content: "0" counter(number);
+    font-family: "Yeseva One", cursive;
+    font-size: 30px;
+    color: #bea495;
+  }
+  &__item--even::before {
+    right: 0;
+    left: auto;
+  }
+  &__item:nth-child(n + 10)::before {
+    content: counter(number);
+  }
+  &__item-text {
+    padding-bottom: 40px;
+    flex-basis: 174px;
+  }
+}
+.section {
+}
+.container {
+}
+.section__inner {
+}
+.steps__descr {
+}
+.section__descr {
+}
+
+.title {
+}
+
+.section__text {
+}
+
+.section__content-descr {
+}
+.section--decor {
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
