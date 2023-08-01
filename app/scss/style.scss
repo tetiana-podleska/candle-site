@@ -276,27 +276,6 @@ button {
     flex-basis: 174px;
   }
 }
-.section {
-}
-.container {
-}
-.section__inner {
-}
-.steps__descr {
-}
-.section__descr {
-}
-
-.title {
-}
-
-.section__text {
-}
-
-.section__content-descr {
-}
-.section--decor {
-}
 
 .footer {
   padding-top: 40px;
@@ -323,6 +302,17 @@ button {
 }
 
 /** MEDIA **/
+
+@media (max-width: 1050px) {
+  .steps {
+    &__item {
+      gap: 0 30px;
+    }
+    &__list {
+      gap: 37px 35px;
+    }
+  }
+}
 
 @media (max-width: 1000px) {
   .container {
